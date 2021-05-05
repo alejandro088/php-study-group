@@ -1,0 +1,19 @@
+{
+    "name": "alejandro/roman-numbers",
+    "description": "",
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "authors": [
+        {
+            "name": "Alejandro Cayssials",
+            "email": "admin@webxander.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Card\\" : "src",
+            "Test\\" : "tests"
+        }
+    }
+}
