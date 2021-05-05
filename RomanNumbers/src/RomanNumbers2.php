@@ -8,9 +8,9 @@ class RomanNumbers2
     
     private $digits;
 
-    private $start = 0;
+    private $start;
 
-    private $numberRoman = '';
+    private $numberRoman;
 
     public function decimalToRoman($number)
     {
@@ -27,6 +27,11 @@ class RomanNumbers2
                             9=CM     9=XC    9=IX
 
          1000=M 900=CM 90=XC */
+        
+        
+        //initilize attributes for new call.
+        $this->start = 0;
+        $this->numberRoman = '';
 
         $this->digits  = array_map('intval', str_split($number));
         
